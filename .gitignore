@@ -20,3 +20,6 @@ pnpm-debug.log*
 
 # Astro
 .astro/
+
+# Archivos temporales de Visual Studio Code
+*~
