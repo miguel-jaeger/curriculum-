@@ -1,0 +1,122 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Educación</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Máster en Informática Aplicada"
+      subtitle="Desde [2011] a [2013] en la [Universidad de las Ciencias Informáticas], [La Habana], [Cuba]"
+    />
+    <TimeLineElement
+      title="Ingeniero en Ciencias Informáticas"
+      subtitle="Desde [2002] al [2007] en la [Universidad de las Ciencias Informáticas], [La Habana], [Cuba]"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experiencia</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Jefe de asignatura"
+      subtitle="Desde [2014] hasta [2023] en la [Universidad de las Ciencias Informáticas], [La Habana], [Cuba]"
+    >
+    Estuvo al frente de la asignaturas de Programación Web, Sistemas operativos modernos, Compiladores y Seguridad informática.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Profesor universitario"
+      subtitle="Desde [2019] hasta [2020] en el [Instituto Superior para as Tecnologias de Informação e Comunicação], [Luanda], [Angola]"
+    >
+    Impartió las siguientes asignaturas:
+    <ul>
+      <li>Modelaje y simulación</li>
+      <li>Sistemas operativos I y II</li>
+      <li> Probabilidad y estadística</li>
+      <li>  Programación web</li>
+    </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Jefe de proyecto/línea."
+      subtitle="Desde [2007] hasta [2014] en la [Universidad de las Ciencias Informáticas], [La Habana], [Cuba]"
+    >
+    Ejerció el cargo de jefe de proyecto o línea en varios proyectos de la facultad, labor que estuvo simultaneando con la docencia.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certificaciones</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> Scrum Máster Foundation.
+        Professional Certificate SFPC™ 2023</a>
+    </li>
+    
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Habilidades</div>
+  </div>
+  <ul class="list-disc md:columns-3 columns-2 mx-6">
+    <li>HTML 5 & CSS 3 - 5/5</li>
+    <li>JavaScript - 4/5</li>
+    <li>PHP - 5/5</li>
+    <li>Drupal - 4/5</li>
+    <li>PrestaShop - 2/5</li>
+    <li>Python - 3/5</li>
+    <li>MySQL - 4/5</li>
+    <li>PostgreSQL - 4/5</li>
+    <li>Django - 3/5</li>
+    <li>Django-RestFramework -3/5</li>
+    <li>Git, GitHub, GitLab, Bitbucket - 4/5</li>
+    <li>Figma - 4/5</li>
+    <li>Sociable - 5/5</li>
+    <li>Trabajo en equipo - 5/5</li>
+    <li>Proactivo - 5/5</li>
+  </ul>
+
+  <br>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Referencias</div>
+  </div>
+  <div class="mx-6 mb-10 grid gap-2">
+  <HorizontalCard
+    title="MSc. Héctor Rodríguez Figueredo - Parque Científico Tecnológico de la Habana S.A. Cuba"
+    img="/hector.jpeg"
+    desc="hector@3ce.cu / +5352857586"
+    url="https://www.linkedin.com/in/hrodriguezf/"
+    badge=""
+  />
+  <HorizontalCard
+    title="Luis Domínguez Cruz - Drupalera"
+    img="/luis.jpeg"
+    desc="ldominguez@emergya.com / +59896839482"
+    url="https://www.linkedin.com/in/luis-dominguez-cruz-93a4b95a/"
+    badge=""
+  />
+  <HorizontalCard
+    title="MSc. Alexander Vinent Peña - UKG. Uruguay"
+    img="/alec.jpeg"
+    desc="alecvinent@gmail.com /  +598 96 427 473"
+    url="https://www.linkedin.com/in/alec-vinent-17802311a/"
+    badge=""
+  />
+  <HorizontalCard
+  title="Yunieski Diegues Garcia - TREMGROUP. Miami"
+  img="/keeper.jpeg"
+  desc="yunieskid@gmail.com / +51 984 786 434"
+  url="https://www.linkedin.com/in/yunieskid/"
+  badge=""
+/>
+  </div>
+</BaseLayout>
