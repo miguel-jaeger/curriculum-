@@ -8,8 +8,8 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://miguel-jaeger.github.io',
-  base: '/mi-curriculum/',
+  site: 'https://miguel-jaeger.github.io//mi-curriculum',
+  // base: '/mi-curriculum',
   integrations: [mdx(), sitemap(), tailwind(), image(
     {
       serviceEntryPoint: '@astrojs/image/sharp',
